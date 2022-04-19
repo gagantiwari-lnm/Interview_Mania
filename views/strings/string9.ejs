@@ -1,0 +1,18 @@
+<%- include('../partials/header'); -%>
+
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+   <h4><b>Rearanaging the adjacent duplicate characters</b></h4>
+   <h5>Problem Description:- write a program to tell wheather it is possible to rearrange the adjacent duplicate characters such that there are no more adjacent duplicate characters.</h5> 
+    <h5>Example:-</h5>
+    <h5>INPUT: str = "cool"</h5>
+    <h5>OUTPUT: true </h5>
+    <h4>Solution:-We will count the number of times the most freuent character is occuring, the most frequent number should not occur more than ceil(n/2) times, or else it will be adjacent to itself at any point. and if it occurs less then ceil(n/2) times then it is possible to rearange the string.</h4>  
+   <h5>Time Complexity:- O(n) , where n = |str|</h5> 
+   <h5>Space Complexity:- O(n)</h5>
+   <h4>code:-</h4>
+   <script src="https://gist.github.com/Tech-Interviewing/0a5ef8ff942f7c100286b5707fcc62a5.js"></script> 
+ </div>
+</div> 
+
+<%- include('../partials/footer'); -%>

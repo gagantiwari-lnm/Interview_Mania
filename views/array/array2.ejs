@@ -1,0 +1,32 @@
+
+<%- include('../partials/header'); -%>
+
+
+<div class="row" style="display: flex; flex-wrap: wrap;">         
+<div class = "col-sm-9" > 
+    <h4><b>Negative numbers to the left and Positives to right</b></h4>
+    <h5>Problem Description:-Given an array containing both possitive and negative numbers, Move all negative numbers to beginning and positive to end with constant extra space.</h5> 
+  
+    <h4>Solution (Method 1):-</h4>
+    <h5>Simply sorting the input array will give us the resultant array.</h5>
+    <h5>Time Complexity:- O(nlog(n))</h5>
+
+    <br>
+    
+    <h4><b>Method 2:-</b></h4>
+    <h5>In this method we will be using the two pointers approach.</h5>
+    <h5>1)Initalize the left pointer as first element of the array and the right pointer as last element</h5>
+    <h5>2)If we find a negative number at left pointer and positive number at right pinter then we will increment the left and decrement the right pointer</h5>
+    <h5>3)If we find a negative number at left pointer and negative number at right pinter then we will increment the left pointer and keep the right pointer same</h5>
+    <h5>4)If we find a positive number at left pointer and positive number at right pinter then we will keep the left pointer same and decrement the right pointer</h5>
+    <h5>5)If we find a positive number at left pointer and negative number at right pinter then we will swap the numbers at left and right pointers and then increment the left pointer and decrement the right pointer</h5>
+    <h5>Time Complexity:- O(n)</h5> 
+    <h4>code:-</h4>
+    <script src="https://gist.github.com/Tech-Interviewing/c1c6326c6a0d9ec94cd6c620a36b1561.js"></script>
+
+    <br>
+  </div>
+</div>
+
+
+  <%- include('../partials/footer'); -%>

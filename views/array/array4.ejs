@@ -1,0 +1,39 @@
+<%- include('../partials/header'); -%>
+
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+    <h4><b> Find the Duplicate Number In an Array of n+1 numbers</b></h4>
+    <h5>Problem Description:-Given an array containing n+1 integers, all integers in the array are in the range of [1,n] and there is only one duplicate integer. you have to return that duplicate integer.</h5> 
+    <h5>Example:-</h5>
+    <h5>INPUT: arr = [1,2,3,1,4]</h5>
+    <h5>OUTPUT: 1</h5>
+    <h4>Solution:-</h4>
+    <h4>Naive Method</h4>
+    <h5>We will simply check for every number in the array that if it has occured twice, as soon as we find such a number we will return that number</h5>
+    <h5>Time Complexity:- O(n^2)</h5>
+    <h5>Space Complexity:- O(1)</h5>
+    <h4>code:-</h4>
+    <script src="https://gist.github.com/Tech-Interviewing/112d2e497ece43139db32f759eaa445d.js"></script>
+
+    <br>
+
+    <h4><b>Method 2:-</b></h4>
+    <h5>we will use a map to store the frequencies of the numbers in the array while traversing it, if we find a number with already a frequency 1 then it means it is the repeated number and we will return it.</h5>
+    <h5>Time Complexity:- O(n)</h5>
+    <h5>Space Complexity:- O(n)</h5> 
+    <h4>code:-</h4>
+    <script src="https://gist.github.com/Tech-Interviewing/673716e898983fd3fa37cc8b46c42852.js"></script>
+    <br>
+  
+    <h4><b>Method 3:-</b></h4>
+    <h5>traverse the array and start making the number present on the index of the current number as negative , and if you have found a number which is aready negative then it means that the index has already visited before so it is the duplicate number.</h5>
+    <h5>Time Complexity:- O(n)</h5>
+    <h5>Space Complexity:- O(1)</h5> 
+    <h4>code:-</h4>
+    <script src="https://gist.github.com/Tech-Interviewing/31f198b522e70962bd6a458cb49aba55.js"></script>
+    <br>
+
+ </div>
+</div>
+  
+  <%- include('../partials/footer'); -%>

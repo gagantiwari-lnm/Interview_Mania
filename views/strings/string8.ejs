@@ -1,0 +1,18 @@
+<%- include('../partials/header'); -%>
+
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+   <h4><b>Minimum number of swaps for bracket balancing.</b></h4>
+   <h5>Problem Description:- Given a string, with 2n characters and there are n '[' opening square brackets and n ']' closing square brackets, you have to tell how many swap operations are required so that the brackets prent in the string becomes balanced.</h5> 
+    <h5>Example:-</h5>
+    <h5>INPUT: str = "[]][]["</h5>
+    <h5>OUTPUT: 1 </h5>
+    <h4>Solution:- We will count the number of closing brackets that come before the any opening bracket i.e they are not balanced, and this count will be equal to the number of swap operations needed to ne performed</h4>
+   <h5></h5>
+   <h5>Time Complexity:- O(n) , where n = |str|</h5> 
+   <h4>code:-</h4>
+   <script src="https://gist.github.com/Tech-Interviewing/6c4f1976f24c35e1cb1613e6c34e73b7.js"></script> 
+ </div>
+</div> 
+
+<%- include('../partials/footer'); -%>

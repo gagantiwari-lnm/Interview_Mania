@@ -1,0 +1,21 @@
+<%- include('../partials/header'); -%>
+
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+   <h4><b>Balanced Parenthesis</b></h4>
+   <h5>Problem Description:-check if the given expression has balanced Parenthesis</h5> 
+    <h5>Example:-</h5>
+    <h5>INPUT: str = "[x*y +{3*y}]"</h5>
+    <h5>OUTPUT: true </h5>
+    <h4>Solution:-We Use Stack to solve this problem, </h4>
+     <h4>1)Create a stack s, then start traversing the expression string</h4>
+     <h4>2)If there is a opening bracket then push it into the stack.</h4> 
+     <h4>3)else If you get a closing bracket and it is the complementary bracket of what is present on the top of the stack then pop from the stack, else if it is not the complementary bracket then the Parenthesis are not balanced.</h4>
+     <h4>4)If the stack is empty after the complete traversal of the string then it means the Parenthesis are balanced else the Parenthesis are not balanced</h4>
+   <h5>Time Complexity:- O(n) because we need only a single traversal of the string</h5> 
+   <h4>code:-</h4>
+   <script src="https://gist.github.com/Tech-Interviewing/b46a984aad768bd910efaa58b3d77461.js"></script>
+ </div>
+</div> 
+
+ <%- include('../partials/footer'); -%>

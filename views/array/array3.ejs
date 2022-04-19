@@ -1,0 +1,31 @@
+
+<%- include('../partials/header'); -%>
+
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+    <h4><b>Largest Sum of a Contigous subarray</b></h4>
+    <h5>Problem Description:-Problem Description:-Given an array containing n integers, Find the largest sum that can be made by adding elements of its contigous subarrays.</h5> 
+    <h5>Example:-</h5>
+    <h5>INPUT: arr = [1,-2,3,-1,4]</h5>
+    <h5>OUTPUT: 6</h5>
+    <h4>Solution:-</h4>
+    <h4>Naive Method</h4>
+    <h5>We will calculate the sum of all possible contigous subarrays and find largest of them</h5>
+    <h5>Time Complexity:- O(n^3)</h5>
+    <h4>code:-</h4>
+    <script src="https://gist.github.com/Tech-Interviewing/39bfeb72aec9b700f12c1e431e74964f.js"></script>
+
+    <br>
+
+    <h4><b>Method 2(Kadane's Algorithm):-</b></h4>
+    <h5>In this method we will be using the popular kadane's algorithm.</h5>
+    <h5>The basic idea behind Kadane's approach is to search the array for all positive contiguous segments (max ending here is utilised for this). Also, among all positive segments, maintain track of the maximum total contiguous segment (max so far is utilised for this). Each time we obtain a positive total, we compare it to max so far and update max so far if it's higher.</h5>
+    
+    <h5>Time Complexity:- O(n)</h5> 
+    <h4>code:-</h4>
+    <script src="https://gist.github.com/Tech-Interviewing/bf6ad8ae82f24183e68e943700af3368.js"></script>
+    <br>
+  </div> 
+</div>
+  
+  <%- include('../partials/footer'); -%>

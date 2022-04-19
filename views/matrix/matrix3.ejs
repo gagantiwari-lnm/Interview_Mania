@@ -1,0 +1,24 @@
+<%- include('../partials/header'); -%>
+
+<div style = "position:relative; left:80px;">
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+   <h4><b>rotate matrix by 180 degrees. </b></h4>
+   <h5>Problem Description:-Given a input square matrix, rotate the matrix by 180 degrees</h5> 
+    <h5>Example:-</h5>
+    
+    <h5>matrix[][] =   [{1,2,3},
+                        {4,5,6},
+                        {7,8,9}] </h5>
+    <h5>OUTPUT: [{9,8,7},
+                 {6,5,4},
+                 {3,2,1}]</h5>
+    <h4>Solution:-</h4>
+   <h5>We can get the desired output by first doing transpose of the given matrix and then reversing each column in that matrix.</h5>
+   <h5>Time Complexity:- O(n^2) where n = number of elements in a row or column of the square matrix</h5> 
+   <h4>code:-</h4>
+   <script src="https://gist.github.com/Tech-Interviewing/03060409f411c2a9cb3d161a7beccca8.js"></script>
+ </div>
+</div> 
+</div>
+ <%- include('../partials/footer'); -%>

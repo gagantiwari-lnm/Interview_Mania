@@ -1,0 +1,18 @@
+<%- include('../partials/header'); -%>
+
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+   <h4><b>Print all the permutations of the given string</b></h4>
+   <h5>Problem Description:-write a program to print all permutations of the given string.</h5> 
+    <h5>Example:-</h5>
+    <h5>INPUT: str = "abc"</h5>
+    <h5>OUTPUT: "abc", "acb", "bac", "bca", "cab", "cba"</h5>
+    <h4>Solution:-We Use the concept of backtracking to solve this problem, we fix one character and swap the other characters to make new permutations, look at the code for better understanding.</h4>
+   <h5>Time Complexity:- O(n*n!) because total number of permutations are n! and each permutation requires o(n) time to be printed, here n is the number of character in the given string</h5> 
+   <h4>code:-</h4>
+   <script src="https://gist.github.com/Tech-Interviewing/ebb8024496ecabd200310ee4740c8398.js"></script>
+ </div>
+</div> 
+
+
+ <%- include('../partials/footer'); -%>

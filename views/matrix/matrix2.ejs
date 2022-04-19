@@ -1,0 +1,23 @@
+<%- include('../partials/header'); -%>
+
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+   <h4><b>rotate matrix by 90 degrees. </b></h4>
+   <h5>Problem Description:-Given a input square matrix, rotate the matrix by 90 degrees</h5> 
+    <h5>Example:-</h5>
+    <h5>INPUT: r=3, c=3 </h5>
+    <h5>matrix[][] =   [{1,2,3},
+                        {4,5,6},
+                        {7,8,9}] </h5>
+    <h5>OUTPUT: [{7,4,1},
+                 {8,5,2},
+                 {9,6,3}]</h5>
+    <h4>Solution:-</h4>
+   <h5>We can get the desired output b first doing transpose of the given matri and then reversing each column in that matrix.</h5>
+   <h5>Time Complexity:- O(n^2) where n = number of elements in a row or column of the square matrix</h5> 
+   <h4>code:-</h4>
+   <script src="https://gist.github.com/Tech-Interviewing/87294909cd290d2883e720a181bf9c98.js"></script>
+ </div>
+</div> 
+
+ <%- include('../partials/footer'); -%>

@@ -1,0 +1,18 @@
+<%- include('../partials/header'); -%>
+
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+   <h4><b>Rearanage the adjacent duplicates</b></h4>
+   <h5>Problem Description:-write a program to rearrange the adjacent duplicate characters such that there are no more adjacent duplicate characters, if it is not possible then return an empty string i.e "".</h5> 
+    <h5>Example:-</h5>
+    <h5>INPUT: str = "cool"</h5>
+    <h5>OUTPUT: "colo" </h5>
+    <h4>Solution:-We will use a priority queue to keep track of the two of the most frequent characters and then will start placing them in the new string one by one uptill either priority queue is empty or we are left with only one character in the priority queue, this last left character should have the freuency of 1 if so then we will add it at the last and if not then it is not possible to reorganize the string.</h4>  
+   <h5>Time Complexity:- O(n) , where n = |str|</h5> 
+   <h5>Space Complexity:- O(n)</h5>
+   <h4>code:-</h4>
+   <script src="https://gist.github.com/Tech-Interviewing/276e771eab0c84fc5cff4ffb1ffb3e82.js"></script>
+ </div>
+</div> 
+
+<%- include('../partials/footer'); -%>

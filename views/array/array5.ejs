@@ -1,0 +1,20 @@
+<%- include('../partials/header'); -%>
+
+<div class="row" style="display: flex; flex-wrap: wrap;">
+<div class = "col-sm-9">
+   <h4><b>Best Time to Buy and Sell a Stock</b></h4>
+   <h5>Problem Description:-You are given an array named Prices, Prices[i] is the price of a certain stock on the ith day, and prices[i] is an array of prices.
+    You aim to maximise your profit by buying one stock on a certain day and selling it on a different day in the future.  
+    Return the highest possible profit from this transaction. Return 0 if you are unable to make a profit.</h5> 
+    <h5>Example:-</h5>
+    <h5>INPUT: prices = [10,5,3,1,4,6,7]</h5>
+    <h5>OUTPUT: 6</h5>
+    <h4>Solution:-</h4>
+   <h5>We Find the Maimum profit by subtracting the lowest price met so far and the current price of the stock as we traverse through the array.</h5>
+   <h5>Time Complexity:- O(n)</h5> 
+   <h4>code:-</h4>
+   <script src="https://gist.github.com/Tech-Interviewing/bb019918191327ed441718b5e2233aa2.js"></script>
+ </div>
+</div> 
+
+ <%- include('../partials/footer'); -%>
